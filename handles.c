@@ -129,6 +129,7 @@ void ftp_pasv(Command *cmd, State *state)
     char buff[255];
     char *response = "227 Entering Passive Mode (%d,%d,%d,%d,%d,%d)\n";
     Port *port = malloc(sizeof(Port));
+      free(port);
     gen_port(port);
     getip(state->connection,ip);
 
