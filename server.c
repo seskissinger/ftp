@@ -15,6 +15,8 @@ void server(int port)
     char buffer[BSIZE];
     Command *cmd = malloc(sizeof(Command));
     State *state = malloc(sizeof(State));
+        free(cmd);
+        free(cmd);
     free(cmd);
     free(cmd);
     free(cmd);
